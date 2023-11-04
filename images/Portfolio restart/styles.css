@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Croissant One', cursive;
+}
+
+body {
+    background-color:#081b29;
+    color: #ededed;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    top:0;
+    left:0;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(174, 141, 139);
+}
+nav{
+    position:fixed;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: gainsboro;
+    font-size: 1.14rem;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+#first {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 0;
+}
+
+#first>div {
+    width: 38%;
+}
+.leftsection {
+    margin-top: 90px;
+    font-size: 3.8rem;
+    width: max-content;
+}
+
+.rightsection{
+    width:auto;
+    align-items: center;
+}
+.rightsection img {
+    width: 95%;
+    margin: 50px 0px;
+}
+
+.color {
+    color: rgb(140, 88, 189);
+}
+
+#element{
+    color:rgb(90, 199, 90);
+}
+
+.rightsection img{
+    border-radius: 75%;
+}
+
+#second{
+    max-width:80vw;
+    margin-top:10px;
+    margin: auto;
+    height:70vh;
+    text-align: center;
+}
+
+main hr{
+    border:0;
+    background: lightslategray;
+    height:1.0px;
+    margin: 30px 90px;
+}
+
+#third{
+    max-width: 75vw;
+    height: 170vh;
+    margin: auto;
+    text-align: center;
+}
+
+.skills-cards,.skills-cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.skill-card {
+    width: 100px; /* Reduced margin */
+    height: 100px;
+    margin: 5px; /* Reduced margin */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 25%;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.skill-card.aws{
+    background: linear-gradient(135deg, #ffa600, #FFFFFF);
+}
+
+.skill-card.python{
+    background: linear-gradient(120deg, #FFFF00, #87CEEB);
+}
+
+.skill-card.cpp{
+    background: linear-gradient(135deg, #000080, #FFFFFF);
+}
+
+.skill-card.c{
+    background: linear-gradient(135deg, #000080,#87CEEB, #FFFFFF);
+}
+
+.skill-card.html{
+    background: linear-gradient(135deg, #f39c12, #e74c3c, #c0392b);
+}
+
+.skill-card.css{
+    background: linear-gradient(135deg, #3498db, #2980b9, #2071a0,#ffffff);
+}
+
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7); /* Background color for the text */
+    color: white; /* Text color */
+    padding: 10px;
+    display: none; /* Hide the text by default */
+    transition: opacity 0.3s; /* Smooth fade-in effect */
+}
+
+.skill-card:hover .text {
+    display: block; /* Show the text on hover */
+}
+
+.skill-card.java{
+    background: linear-gradient(135deg, #FF0000, #FFA500, #87CEEB);
+}
+
+
+#certifications {
+    padding: 40px;
+    text-align: center;
+}
+
+.certification-card {
+    display: inline-block;
+    width: 500px;
+    height: 350px; /* Set a fixed height to make the card a rectangle */
+    margin: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: left; /* Ensure that the content doesn't spill out */
+}
+
+.certification-card img {
+    width: 100%;
+    height: 100%; /* Maintain the original aspect ratio without distortion */
+    object-fit: cover;
+}
+
+.certification-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.certification-card p {
+    font-size: 14px;
+}
+
+.certification-card a {
+    display: block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.certification-card a:hover {
+    background-color: #2980b9;
+}
+
+#projects {
+    padding: 50px;
+    text-align: center;
+}
+
+.project-card {
+    display: inline-block;
+    height: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: #2980b9;
+}
+
+#Contact {
+    padding: 40px;
+    text-align: center;
+}
+
+#Contact h2 {
+    font-size: 24px;
+    color: #3498db;
+}
+
+.input-box {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-field {
+    margin: 10px;
+}
+
+.input-field input, .input-field textarea {
+    margin-top:10px;
+    width:45%;
+    padding: 10px;
+    border: 5px solid #00abf0;
+    border-radius: 5px;
+}
+.input-field.name{
+    margin-top: 30px;
+}
+
+
+
+.input-field input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+footer {
+    background-color:none;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.media a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.media a:hover {
+    text-decoration: underline;
+}
